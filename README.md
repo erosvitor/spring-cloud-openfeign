@@ -1,7 +1,7 @@
 # SpringCloudOpenFeign
 
 ## Description
-The **SpringCloudOpenFeign** is a project that show how to implement communication between microservices using the Spring Cloud OpenFeign.
+Project that show how to implement communication between micro services using the Spring Cloud Open Feign.
 
 ## Technologies
 The project use the following technologies:
