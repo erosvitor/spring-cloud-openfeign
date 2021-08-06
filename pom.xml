@@ -4,7 +4,7 @@
 
   <groupId>com.ctseducare</groupId>
   <artifactId>spring-cloud-openfeign</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -15,7 +15,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.3.9.RELEASE</version>  <!-- fev/2021 -->
+    <version>2.5.3</version>  <!-- jul/2021 -->
   </parent>
   
   <dependencyManagement>
@@ -24,9 +24,9 @@
       <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-dependencies</artifactId>
-        <version>Hoxton.SR10</version>  <!-- fev/2021 -->
+        <version>2020.0.3</version>  <!-- may/2021 -->
         <type>pom</type>
-        <scope>import</scope>
+        <scope>runtime</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>

@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ctseducare.openfeign.servicetwo.feignclients.ServiceOneFeignClient;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
+import io.github.resilience4j.retry.annotation.Retry;
 
 @RestController
 public class ServiceTwoResource {
@@ -19,13 +20,14 @@ public class ServiceTwoResource {
   }
   
   @GetMapping("/invokeserviceone")
-  @HystrixCommand(fallbackMethod = "fallback")
+  @Retry(name = "serviceone-fallback", fallbackMethod = "fallbackMethod")
   public String serviceone() {
+    System.out.println("is  down...");
     return serviceOne.hello();
   }
   
-  public String fallback() {
-    return "Service ONE is down!!!";
+  public String fallbackMethod(Exception ex) {
+    return "The serviceone is down!!!";
   }
-  
+    
 }

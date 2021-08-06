@@ -11,7 +11,6 @@ The project use the following technologies:
 * Project aggregation
 * Spring Boot
 * Spring Cloud OpenFeign
-* Spring Cloud Netflix Hystrix
 * IDE Eclipse
 
 ## Testing the project
@@ -47,6 +46,15 @@ The following message will be displayed:
 Service ONE is down!!!
 ```
 
+## References
+[Spring Boot](https://spring.io/projects/spring-boot)  
+[Spring Cloud](https://spring.io/projects/spring-cloud)  
+[Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
+
 ## Release History
+* 1.0.1 (2021-08-03)
+    * Spring Boot updated to 2.5.3
+    * Spring Cloud updated to 2020.0.3
+    * Section 'references' added
 * 1.0.0 (2021-05-15)
     * First version
