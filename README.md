@@ -1,20 +1,29 @@
-# SpringCloudOpenFeign
-
-## Description
-Project that show how to implement communication between micro services using the Spring Cloud Open Feign.
+## About
+The project shows how to implement communication between micro services using the Spring Cloud Open Feign.
 
 ## Technologies
-The project use the following technologies:
+The following tools were used in this project:
 
-* Java 11
-* Apache Maven
-* Project aggregation
-* Spring Boot
-* Spring Cloud OpenFeign
-* IDE Eclipse
+* [Java Oracle](https://www.oracle.com/java/)
+* [Apache Maven](https://maven.apache.org/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* [Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
+* [IDE Eclipse](https://www.eclipse.org/)
 
-## Testing the project
-**Step 1:** Start the microservices
+## Requirements
+Before starting this project you need to have Git, JDK Oracle, Maven and Eclipse IDE installed.
+
+## Starting the project
+
+### Clonning the project
+```
+$ git clone https://github.com/erosvitor/spring-cloud-openfeign.git
+
+$ cd spring-cloud-openfeign
+```
+
+### Testing the project
+**Step 1:** Start the microservices using Eclipse IDE or by Maven command line
 * ServiceOne
 * ServiceTwo
 
@@ -46,10 +55,8 @@ The following message will be displayed:
 Service ONE is down!!!
 ```
 
-## References
-[Spring Boot](https://spring.io/projects/spring-boot)  
-[Spring Cloud](https://spring.io/projects/spring-cloud)  
-[Spring Cloud OpenFeign](https://spring.io/projects/spring-cloud-openfeign)
+## License
+This project is under license from MIT. For more details, see the LICENSE file.
 
 ## Release History
 * 1.0.1 (2021-08-03)
